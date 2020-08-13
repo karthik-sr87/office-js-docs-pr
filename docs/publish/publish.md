@@ -75,15 +75,15 @@ To assign add-ins to tenants, you use the Exchange admin center to upload a mani
 
 ## Allow the correct domains
 
-Published add-ins need access to web services. The following information needs to be available and accessible by certain domains:
+Published add-ins need access to web services. The following resources need to be available and accessible by certain domains:
 
 - The taskpane URL.
 - Add-in resources (such as icons for add-in commands and support URLs).
 - [Custom Functions JSON metadata](../excel/custom-functions-json.md).
 
-For add-ins published to AppSource, those resources need to be accessible by the following domains:  <list of domains>
+When using add-ins published to AppSource, those resources need to be accessible by the following domains:  <list of domains>
 
-Add-ins deployed through centralized deployment or other non-AppSource means need their resources to be accessible by the any domains that the add-in will be used on Office for Web (e.g., contoso.sharepoint.com or contoso.onmicrosoft.com).
+When using add-ins deployed through centralized deployment or other non-AppSource means, those resources to be accessible by any domains that the add-in will be used on in conjunction with Office for the Web (e.g., contoso.sharepoint.com or contoso.onmicrosoft.com).
 
 ## See also
 
