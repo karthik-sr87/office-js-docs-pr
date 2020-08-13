@@ -1,7 +1,7 @@
 ---
 title: Deploy and publish Office Add-ins
 description: Methods and options to deploy your Office Add-in for testing or distribution to users.
-ms.date: 06/02/2020
+ms.date: 08/13/2020
 localization_priority: Priority
 ---
 
@@ -72,6 +72,18 @@ Outlook add-in deployment requires:
 - Outlook 2013 or later
 
 To assign add-ins to tenants, you use the Exchange admin center to upload a manifest directly, either from a file or a URL, or add an add-in from AppSource. To assign add-ins to individual users, you must use Exchange PowerShell. For details, see [Install or remove Outlook add-ins for your organization](https://technet.microsoft.com/library/jj943752(v=exchg.150).aspx) on TechNet.
+
+## Allow the correct domains
+
+Published add-ins need access to web services. The following information needs to be available and accessible by certain domains:
+
+- The taskpane URL.
+- Add-in resources (such as icons for add-in commands and support URLs).
+- [Custom Functions JSON metadata](../excel/custom-functions-json.md).
+
+For add-ins published to AppSource, those resources need to be accessible by the following domains:  <list of domains>
+
+Add-ins deployed through centralized deployment or other non-AppSource means need their resources to be accessible by the any domains that the add-in will be used on Office for Web (e.g., contoso.sharepoint.com or contoso.onmicrosoft.com).
 
 ## See also
 
